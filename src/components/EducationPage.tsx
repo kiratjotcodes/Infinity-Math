@@ -18,7 +18,7 @@ export function EducationPage() {
           <h1>One tiny rule.<br /><span>Infinite structure.</span></h1>
           <p>
             Fractals are what happens when a simple equation is repeated and its history is recorded.
-            Itera turns that recursion into a field you can navigate.
+            Infinity Math turns that recursion into a field you can navigate.
           </p>
         </div>
       </section>
@@ -116,4 +116,3 @@ export function EducationPage() {
     </main>
   )
 }
-

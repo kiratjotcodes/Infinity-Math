@@ -144,14 +144,14 @@ button:disabled {
   letter-spacing: 1.55px;
 }
 
-.itera-mark {
+.infinity-math-mark {
   position: relative;
   width: 31px;
   height: 31px;
   flex: 0 0 auto;
 }
 
-.itera-mark .mark-orbit {
+.infinity-math-mark .mark-orbit {
   position: absolute;
   left: 3px;
   top: 9px;
@@ -161,9 +161,9 @@ button:disabled {
   border-radius: 50%;
 }
 
-.itera-mark .orbit-a { transform: rotate(33deg); }
-.itera-mark .orbit-b { transform: rotate(-33deg); border-color: #eb80bd; }
-.itera-mark i {
+.infinity-math-mark .orbit-a { transform: rotate(33deg); }
+.infinity-math-mark .orbit-b { transform: rotate(-33deg); border-color: #eb80bd; }
+.infinity-math-mark i {
   position: absolute;
   left: 13px;
   top: 13px;
@@ -686,7 +686,7 @@ input[type='range']::-webkit-slider-thumb {
   color: #4f5971;
 }
 .app-footer > span { display: flex; align-items: center; gap: 4px; color: #747f9c; font-family: var(--display); font-size: 13px; }
-.app-footer .itera-mark { transform: scale(.6); transform-origin: left center; margin-right: -8px; }
+.app-footer .infinity-math-mark { transform: scale(.6); transform-origin: left center; margin-right: -8px; }
 .app-footer p { margin: 0; font-size: 9px; text-align: center; }
 .app-footer small { justify-self: end; font: 400 8px/1 var(--mono); }
 

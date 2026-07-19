@@ -22,7 +22,7 @@ export function OrbitInspector({ selectedPoint, mode, juliaC, orbit }: Props) {
         <div>
           <p className="eyebrow">Orbit inspector</p>
           <h2>Select a point in the field</h2>
-          <p>Itera will expose each step of zₙ₊₁ = zₙ² + c and plot its path through the complex plane.</p>
+          <p>Infinity Math will expose each step of zₙ₊₁ = zₙ² + c and plot its path through the complex plane.</p>
         </div>
         <div className="orbit-preview-code">
           <span>z₀</span><strong>0.000 + 0.000i</strong>
@@ -90,4 +90,3 @@ export function OrbitInspector({ selectedPoint, mode, juliaC, orbit }: Props) {
     </section>
   )
 }
-

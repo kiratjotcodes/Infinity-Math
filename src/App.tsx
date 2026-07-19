@@ -15,9 +15,9 @@ import {
 
 type Page = 'explore' | 'learn' | 'performance'
 
-function IteraMark() {
+function InfinityMathMark() {
   return (
-    <div className="itera-mark" aria-hidden="true">
+    <div className="infinity-math-mark" aria-hidden="true">
       <span className="mark-orbit orbit-a" /><span className="mark-orbit orbit-b" /><i />
     </div>
   )
@@ -51,9 +51,9 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <button className="brand" type="button" onClick={() => setPage('explore')} aria-label="Itera home">
-          <IteraMark />
-          <span><strong>itera</strong><small>COMPLEX DYNAMICS LAB</small></span>
+        <button className="brand" type="button" onClick={() => setPage('explore')} aria-label="Infinity Math home">
+          <InfinityMathMark />
+          <span><strong>Infinity Math</strong><small>COMPLEX DYNAMICS LAB</small></span>
         </button>
         <nav className="main-nav" aria-label="Primary navigation">
           <button className={page === 'explore' ? 'active' : ''} onClick={() => setPage('explore')}>Explore</button>
@@ -105,7 +105,7 @@ function App() {
       {page === 'performance' && <PerformancePage />}
 
       <footer className="app-footer">
-        <span><IteraMark /> Itera</span>
+        <span><InfinityMathMark /> Infinity Math</span>
         <p>Mathematics is not only something to solve. It is something to explore.</p>
         <small>Built with TypeScript · Canvas · Web Workers</small>
       </footer>

@@ -1,6 +1,6 @@
-# Itera
+# Infinity Math
 
-Itera is an interactive complex-dynamics laboratory for exploring the Mandelbrot set, Julia sets, and the orbits hidden behind their pixels. It is a frontend-only React application built for a concise hackathon demonstration.
+Infinity Math is an interactive complex-dynamics laboratory for exploring the Mandelbrot set, Julia sets, and the orbits hidden behind their pixels. It is a frontend-only React application built for a concise hackathon demonstration.
 
 ## Run locally
 

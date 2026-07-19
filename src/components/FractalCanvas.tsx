@@ -212,7 +212,7 @@ export function FractalCanvas({
       const href = URL.createObjectURL(blob)
       const link = document.createElement('a')
       link.href = href
-      link.download = `itera-${mode}-${Date.now()}.png`
+      link.download = `infinity-math-${mode}-${Date.now()}.png`
       link.click()
       URL.revokeObjectURL(href)
     }, 'image/png')
