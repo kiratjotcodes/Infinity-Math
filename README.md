@@ -34,3 +34,17 @@ npm run build
 - `src/components/PerformancePage.tsx` — local resolution/iteration benchmarks
 
 No backend, account system, or persistence layer is required.
+
+## Use of Codex and GPT-5.6
+
+I used OpenAI Codex with GPT-5.6 as a development collaborator throughout the project. It helped me turn the initial hackathon idea into a structured React application, reason through the complex-dynamics model, and iteratively improve the user experience.
+
+Codex and GPT-5.6 were used to:
+
+- design the application architecture around React, TypeScript, HTML Canvas, and Web Workers;
+- implement and review the complex-number operations, escape-time renderer, orbit tracing, and coordinate transforms;
+- create automated tests for complex arithmetic, escape detection, bounded cycles, viewport transforms, and rendered pixel buffers;
+- refine the scientific interface, responsive layout, educational content, performance lab, and project documentation;
+- visually test the application at desktop and mobile sizes, including resolving a mobile navigation layout issue.
+
+The final project remains a frontend-only application: all fractal calculations run locally in the browser, and no user data is sent to a backend.
