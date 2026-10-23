@@ -1,0 +1,34 @@
+{
+  "name": "pocket-change",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Upload your bills. Bored billionaires swipe right to pay them.",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run typecheck && vite build",
+    "start": "node server/main.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p tsconfig.app.json && tsc -p tsconfig.server.json"
+  },
+  "dependencies": {
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "10.4.1",
+    "@testing-library/react": "16.3.2",
+    "@types/node": "22.20.5",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.3",
+    "jsdom": "29.1.1",
+    "typescript": "7.0.2",
+    "vite": "8.1.5",
+    "vitest": "5.0.5"
+  }
+}

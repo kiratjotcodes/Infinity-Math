@@ -48,3 +48,7 @@ Codex and GPT-5.6 were used to:
 - visually test the application at desktop and mobile sizes, including resolving a mobile navigation layout issue.
 
 The final project remains a frontend-only application: all fractal calculations run locally in the browser, and no user data is sent to a backend.
+
+## Also in this repository: Pocket Change
+
+[`pocket-change/`](pocket-change/) is a separate app: upload your bills, and bored billionaires swipe right to pay them. It has its own dependencies and scripts; see [its README](pocket-change/README.md).
