@@ -13,6 +13,7 @@ import {
 } from '../lib/money'
 import { href, navigate } from '../lib/router'
 import { timeAgo } from '../lib/time'
+import { ConfirmAction } from './ConfirmAction'
 
 export function PortfolioPage() {
   const token = billionaireToken()
@@ -41,10 +42,6 @@ export function PortfolioPage() {
   }
 
   function retire() {
-    const sure = window.confirm(
-      'Retire from billionaire life? Your name stays on the leaderboard, but this browser will forget you.',
-    )
-    if (!sure) return
     saveBillionaireToken(null)
     navigate('/billions')
   }
@@ -119,9 +116,12 @@ export function PortfolioPage() {
               Nothing yet. <a href={href('/billions')}>Go swipe right on someone’s rent.</a>
             </p>
           )}
-          <button type="button" className="link-button link-button--muted" onClick={retire}>
-            Retire from billionaire life on this device
-          </button>
+          <ConfirmAction
+            label="Retire from billionaire life on this device"
+            question="Your name stays on the leaderboard, but this browser will forget you."
+            confirmLabel="Retire"
+            onConfirm={retire}
+          />
         </>
       )}
     </div>

@@ -28,6 +28,10 @@ npm start            # http://localhost:8787 (serves dist/ plus the API)
 npm test             # store, API, house billionaires, formatting, and swipe deck tests
 ```
 
+### Browser-only demo
+
+`npm run build:demo` builds a static version with no server: the same store, seed data and house billionaires run inside the browser, and everything is kept in that browser's local storage, so each visitor gets their own private world. It writes a normal static site to `dist-demo/` (host it anywhere) and a single self-contained page, `dist-demo/pocket-change.html`. The demo takes photos but not PDFs.
+
 | Variable             | Default  | What it does                                        |
 | -------------------- | -------- | --------------------------------------------------- |
 | `PORT`               | `8787`   | Port for `npm start`.                               |

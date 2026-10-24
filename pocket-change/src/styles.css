@@ -476,6 +476,27 @@ a {
   color: var(--vault-soft);
 }
 
+.confirm {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+  font-size: 14px;
+}
+
+.confirm__question {
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+
+.app--vault .confirm__question {
+  color: var(--vault-soft);
+}
+
+.link-button.confirm__yes {
+  color: var(--pass);
+}
+
 /* ---------- Forms ---------- */
 
 .field {

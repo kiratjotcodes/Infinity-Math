@@ -7,6 +7,7 @@ import { submitterToken } from '../lib/identity'
 import { formatCents } from '../lib/money'
 import { href } from '../lib/router'
 import { dueLabel, timeAgo } from '../lib/time'
+import { ConfirmAction } from './ConfirmAction'
 import { useCelebratePaid, useFeedback } from './Feedback'
 import { HouseTag } from './PaymentFeed'
 
@@ -58,9 +59,12 @@ function BillRow({
               {bill.passCount > 0 &&
                 ` · ${bill.passCount} ${bill.passCount === 1 ? 'billionaire' : 'billionaires'} yawned`}
             </span>
-            <button type="button" className="link-button link-button--muted" onClick={() => onWithdraw(bill)}>
-              Withdraw
-            </button>
+            <ConfirmAction
+              label="Withdraw"
+              question="Take it out of the deck?"
+              confirmLabel="Withdraw"
+              onConfirm={() => onWithdraw(bill)}
+            />
           </div>
         )}
       </div>
@@ -94,7 +98,6 @@ export function MyBills({ highlight }: { highlight: string | null }) {
   })
 
   async function withdraw(bill: PublicBill) {
-    if (!window.confirm(`Withdraw “${bill.title}” from the deck?`)) return
     try {
       await api.withdrawBill(submitterToken(), bill.id)
       notify('Bill withdrawn. The billionaires will never know.')

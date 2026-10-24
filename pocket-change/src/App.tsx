@@ -73,6 +73,12 @@ export default function App() {
             system, and “House” billionaires are simulated to keep things lively.
           </p>
           <p>Always black out account numbers before sharing a bill with anyone, rich or otherwise.</p>
+          {import.meta.env.VITE_DEMO === 'true' && (
+            <p>
+              This demo runs entirely in your browser. Your bills and billionaire live only on this
+              device, so nobody else sees them.
+            </p>
+          )}
         </footer>
       </div>
     </FeedbackProvider>
